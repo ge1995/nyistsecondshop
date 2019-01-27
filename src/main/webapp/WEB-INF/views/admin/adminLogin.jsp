@@ -21,7 +21,7 @@
 </div>
 <div class="container" style="position: relative; margin: 80px auto;">
     <div class="col-md-6 login-back" style="position: absolute; left: 50%;transform: translateX(-50%);">
-        <form action="/nyist-secondshop/admin/adminLogin" method="post">
+        <form action="<c:url value="/nyist-secondshop/admin/adminLogin"/>" method="post">
             <div class="form-group">
                 <label for="email">邮箱</label>
                 <input class="form-control" id="email" name="email" type="email"/>
@@ -35,7 +35,7 @@
             </div>
             <button style="width: 100%" type="submit" class="btn btn-primary">登录</button>
         </form>
-        <a href="/nyist-secondshop/login">用户登录</a>
+        <a href="<c:url value="/nyist-secondshop/login"/>">用户登录</a>
     </div>
 </div>
 <script src="<c:url value="/statics/jquery-1.12.4/jquery-1.12.4.js"/>"></script>
